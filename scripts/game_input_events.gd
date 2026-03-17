@@ -9,7 +9,7 @@ static func movement_input() -> Vector2:
 		direction = Vector2.RIGHT
 	elif Input.is_action_pressed("walk_up"):
 		direction = Vector2.UP
-	elif Input.is_action_pressed("walk_down") :
+	elif Input.is_action_pressed("walk_down"):
 		direction = Vector2.DOWN
 	else:
 		direction = Vector2.ZERO
@@ -22,3 +22,8 @@ static func is_movement_input() -> bool:
 		return false
 	else:
 		return true
+
+static func use_tool() -> bool:
+	var use_tool_value: bool = Input.is_action_just_pressed("hit")
+	
+	return use_tool_value
