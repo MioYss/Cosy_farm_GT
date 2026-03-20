@@ -16,10 +16,11 @@ tile_map_data = PackedByteArray("AAATAAsAAQABAAEAAAATAAoAAQABAAEAAAATAAkAAQABAAE
 tile_set = ExtResource("1_1ilvq")
 
 [node name="Trees" type="TileMapLayer" parent="GameTleMap" unique_id=1547266574]
-tile_map_data = PackedByteArray("AAAHAAgAAgAAAAAABAAJAAoAAgAAAAAABAALAAgAAgAAAAAABAAJAAgAAgAAAAAABAANAAUAAgAAAAAABAA=")
+tile_map_data = PackedByteArray("AAAHAAgAAgAAAAAABAAJAAoAAgAAAAAABAALAAgAAgAAAAAABAAJAAgAAgAAAAAABAANAAUAAgAAAAAABAAOAAkAAgAAAAAABQAQAAoAAgAAAAAABQAQAAcAAgAAAAAABQA=")
 tile_set = ExtResource("1_1ilvq")
 
-[node name="Player" parent="GameTleMap" unique_id=254804837 instance=ExtResource("2_5nhwj")]
+[node name="Player" parent="." unique_id=254804837 instance=ExtResource("2_5nhwj")]
 position = Vector2(201, 179)
+current_tool = 1
 
-[node name="Camera2D" type="Camera2D" parent="GameTleMap/Player" unique_id=754656024]
+[node name="Camera2D" type="Camera2D" parent="Player" unique_id=754656024]
