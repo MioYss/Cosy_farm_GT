@@ -4,7 +4,7 @@
 [ext_resource type="Script" uid="uid://cgyw5ouhuy46c" path="res://scenes/objects/trees/large_tree.gd" id="2_f4wgc"]
 [ext_resource type="PackedScene" uid="uid://dugeunmc12laf" path="res://scenes/components/hurt_component.tscn" id="2_wjqkr"]
 [ext_resource type="PackedScene" uid="uid://dct7tpg7wgvmh" path="res://scenes/components/damage_component.tscn" id="3_f4wgc"]
-[ext_resource type="Shader" uid="uid://dkfdrb0avsqpg" path="res://scenes/objects/trees/trees_shake.gdshader" id="4_f4wgc"]
+[ext_resource type="Shader" uid="uid://dkfdrb0avsqpg" path="res://scenes/objects/shake.gdshader" id="4_f4wgc"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_f4wgc"]
 resource_local_to_scene = true
@@ -24,7 +24,7 @@ size = Vector2(14, 24)
 
 [node name="LargeTree" type="Sprite2D" unique_id=1802373097]
 material = SubResource("ShaderMaterial_f4wgc")
-position = Vector2(0, -14)
+position = Vector2(0, -12)
 texture = SubResource("AtlasTexture_6vpey")
 script = ExtResource("2_f4wgc")
 
