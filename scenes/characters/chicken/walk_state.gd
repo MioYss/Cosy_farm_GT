@@ -14,7 +14,8 @@ func _ready() -> void:
 	call_deferred("character_setup")
 	
 func character_setup() -> void:
-	await  get_tree().physics_frame
+	await get_tree().create_timer(randf_range(0.1,0.5)).timeout
+	#await  get_tree().physics_frame
 	
 	set_movement_target()
 
