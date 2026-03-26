@@ -50,6 +50,7 @@ theme_override_constants/margin_bottom = 4
 
 [node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer" unique_id=987946997]
 layout_mode = 2
+focus_mode = 2
 
 [node name="ToolAxe" type="Button" parent="MarginContainer/HBoxContainer" unique_id=614192278]
 custom_minimum_size = Vector2(26, 26)
