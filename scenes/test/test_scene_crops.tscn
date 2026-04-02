@@ -5,8 +5,9 @@
 [ext_resource type="PackedScene" uid="uid://b35ribwmey6k5" path="res://scenes/characters/player/player.tscn" id="3_s5uu4"]
 [ext_resource type="PackedScene" uid="uid://bl85eb0brpjpu" path="res://scenes/ui/game_screen.tscn" id="4_f40v7"]
 [ext_resource type="PackedScene" uid="uid://4cidujjnyhet" path="res://scenes/objects/plants/corn.tscn" id="5_eku4r"]
+[ext_resource type="PackedScene" uid="uid://l1fqfnj08h7e" path="res://scenes/objects/plants/tomato.tscn" id="6_s5uu4"]
 
-[node name="TestSceneDayAndNightCycle" type="Node2D" unique_id=2050808752]
+[node name="TestSceneCrops" type="Node2D" unique_id=2050808752]
 
 [node name="DayNightCycleComponent" parent="." unique_id=1045802230 instance=ExtResource("1_17gaa")]
 visible = false
@@ -28,3 +29,6 @@ position = Vector2(202, 183)
 
 [node name="Corn" parent="." unique_id=788821271 instance=ExtResource("5_eku4r")]
 position = Vector2(224, 148)
+
+[node name="Tomato" parent="." unique_id=401572172 instance=ExtResource("6_s5uu4")]
+position = Vector2(188, 150)
