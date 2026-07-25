@@ -8,6 +8,8 @@
 [ext_resource type="PackedScene" uid="uid://bl85eb0brpjpu" path="res://scenes/ui/game_screen.tscn" id="6_hge7i"]
 [ext_resource type="PackedScene" uid="uid://c3341g8i5wvlt" path="res://scenes/components/crops_cursor_component.tscn" id="7_jdj2i"]
 [ext_resource type="Script" uid="uid://wki36itbsfh2" path="res://scenes/components/crops_cursor_component.gd" id="8_j2kjd"]
+[ext_resource type="PackedScene" uid="uid://fjikrua5e1an" path="res://scenes/components/save_level_data_component.tscn" id="9_u8hcv"]
+[ext_resource type="Script" uid="uid://djxcbeo8ok6j5" path="res://scenes/components/save_level_data_component.gd" id="10_hge7i"]
 
 [node name="TestSceneCropsFieldsTilledDirt" type="Node2D" unique_id=2050808752]
 
@@ -42,3 +44,6 @@ tilled_soil_tilemap_layer = NodePath("../GameTleMap/TilledSoil")
 position = Vector2(202, 183)
 
 [node name="GameScreen" parent="." unique_id=950186813 instance=ExtResource("6_hge7i")]
+
+[node name="SaveLevelDataComponent" parent="." unique_id=1608835822 instance=ExtResource("9_u8hcv")]
+script = ExtResource("10_hge7i")
