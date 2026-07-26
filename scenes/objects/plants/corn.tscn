@@ -38,4 +38,4 @@ position = Vector2(-0.5, 3)
 shape = SubResource("RectangleShape2D_5ucl7")
 
 [node name="SaveDataComponent" parent="." unique_id=1870968978 instance=ExtResource("7_q3ekf")]
-save_sata_resource = ExtResource("8_310os")
+save_data_resource = ExtResource("8_310os")

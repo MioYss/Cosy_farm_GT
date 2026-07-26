@@ -5,6 +5,7 @@ extends Resource
 @export var node_path: NodePath
 @export var parent_node_path: NodePath
 
+
 func _save_data(node: Node2D) -> void:
 	global_position = node.global_position
 	node_path = node.get_path()
@@ -15,6 +16,5 @@ func _save_data(node: Node2D) -> void:
 		parent_node_path = parent_node.get_path()
 
 
-
-func _load_data(window: Window) -> void:
+func _load_data(_window: Window) -> void:
 	pass

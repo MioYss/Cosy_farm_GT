@@ -37,4 +37,4 @@ position = Vector2(0.5, -1.5)
 shape = SubResource("RectangleShape2D_wu140")
 
 [node name="SaveDataComponent" parent="." unique_id=1870968978 instance=ExtResource("7_83wcf")]
-save_sata_resource = ExtResource("8_wpajg")
+save_data_resource = ExtResource("8_wpajg")
