@@ -1,7 +1,5 @@
 extends Node2D
 
-var balloon_scene = preload("res://dialogue/game_dialogue_balloon.tscn")
-
 @onready var interactable_component: InteractableComponent = $InteractableComponent
 @onready var interactable_label_component: Control = $InteractableLabelComponent
 
@@ -18,9 +16,3 @@ func on_interactable_activated() -> void:
 
 func on_interactable_deactivated() -> void:
 	interactable_label_component.hide()
-
-func _unhandled_input(event: InputEvent) -> void:
-	if event.is_action_pressed("show_dialogue"):
-		var balloon: BaseGameDialogueBalloon = balloon_scene.instantiate()
-		get_tree().current_scene.add_child(balloon)
-		balloon.start(load("res://dialogue/conversation/guide.dialogue"), "start")
